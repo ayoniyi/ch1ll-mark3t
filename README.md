@@ -1,35 +1,13 @@
-## Getting Started
+## Project Information
 
-Create a project using this example:
+Ch1ll marketplace based on the ch1ll collection on the polygon (mumbai) blockchain.
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
+Marketplace and erc721 contracts built with thirdweb.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Feartures
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+View, Buy NFTs currently listed on the market, Sell NFTs bought from the collection, View NFTs in your wallet from the collection in your wallet.
 
-### Deploy to IPFS
+## Core Tools
 
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
-```
-
-## Learn More
-
-To learn more about thirdweb and Next.js, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+TypeScript, Nextjs, SASS
