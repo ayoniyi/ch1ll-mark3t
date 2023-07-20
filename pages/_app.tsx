@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import "../styles/ham.css";
-//import { ChakraProvider } from "@chakra-ui/react";
+
 import Navbar from "../components/Navbar/Navbar";
 import Head from "next/head";
 
@@ -18,11 +18,18 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Ch1llMark3t</title>
         <meta name="description" content="This Market is chill." />
       </Head>
-      <ThirdwebProvider activeChain={activeChain}>
-        {/* <ChakraProvider> */}
-        <Navbar />
-        <Component {...pageProps} /> {/* </ChakraProvider> */}
-      </ThirdwebProvider>{" "}
+      <div className="smContainer">
+        <p>
+          Sorry you can&apos;t view app on this device, please switch to a
+          larger device.
+        </p>
+      </div>
+      <div className="mainContainer">
+        <ThirdwebProvider activeChain={activeChain}>
+          <Navbar />
+          <Component {...pageProps} />
+        </ThirdwebProvider>{" "}
+      </div>
     </>
   );
 }

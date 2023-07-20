@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "./NavBar.module.scss";
 
-import user from "./user3.svg";
+//import user from "./user3.svg";
 
 const NavbarWeb = () => {
   const address = useAddress();
@@ -18,27 +18,27 @@ const NavbarWeb = () => {
           <div className={style.links}>
             <Link
               //as={NextLink}
-              href={`/profile/${address}`}
+              href={`/token/buy`}
             >
               <p>Buy</p>
             </Link>
             <Link
               //as={NextLink}
-              href={`/profile/${address}`}
+              href={`/token/sell`}
             >
               <p>Sell</p>
             </Link>
           </div>
           <div className={style.account}>
             <ConnectWallet btnTitle="Connect" className={style.connectBtn} />
-            {address && (
+            {/* {address && (
               <Link
                 //as={NextLink}
                 href={`/profile/${address}`}
               >
                 <Image src={user} alt="user" />
               </Link>
-            )}
+            )} */}
           </div>
         </div>
       </div>

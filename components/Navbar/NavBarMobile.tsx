@@ -88,14 +88,14 @@ const NavBarMobile = () => {
             </div>
             <div className={style.accountM} ref={btn}>
               <ConnectWallet btnTitle="Connect" className={style.connectBtn2} />
-              {address && (
+              {/* {address && (
                 <Link
                   //as={NextLink}
                   href={`/profile/${address}`}
                 >
                   <Image src={user} alt="user" />
                 </Link>
-              )}
+              )} */}
             </div>
           </div>
         </div>

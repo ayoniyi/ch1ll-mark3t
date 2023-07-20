@@ -1,7 +1,7 @@
 @import "../styles/mixins";
 .container {
   //margin: 4em auto;
-  padding: 4em 0;
+  padding: 4em 0 1em 0;
   position: relative;
 }
 .hero {
@@ -10,7 +10,7 @@
   //background: #f3f8fe;
   width: 92%;
   margin: auto;
-  padding: 5.5em 0;
+  padding: 5.5em 0 0 0;
   max-width: 1400px;
   color: #e7e8e8;
 }
@@ -35,37 +35,41 @@
   position: relative;
   //background: pink;
   height: 500px;
-  button {
-    opacity: 0.7;
-    backdrop-filter: blur(54px);
-  }
+  //   button {
+  //     opacity: 0.7;
+  //     backdrop-filter: blur(54px);
+  //   }
 }
 
 .nftA {
-  transition: 0.7s ease-in;
+  //transition: 0.7s ease-in;
   position: absolute;
   width: 30vw;
   max-width: 400px;
-  padding-top: 1em;
+  //max-height: 350px;
+  padding-top: 2em;
   //
-  top: 0.4em;
+  top: -5em;
   left: 1em;
   //transform: rotate(-17.597deg) translateX(-86px);
-  transform: rotate(-19.597deg);
+  //transform: rotate(-19.597deg);
+  transform: rotate(-19.597deg) scale(0.9);
 }
 // .imageBx:hover > .nftA {
 //   //transform: rotate(-17.597deg);
 
 // }
 .nftB {
-  transition: 0.7s ease-in;
+  //transition: 0.7s ease-in;
   z-index: 2;
   position: absolute;
   width: 30vw;
   max-width: 400px;
+  //max-height: 0px;
   //
   right: 1em;
-  transform: rotate(7.597deg);
+  top: -4em;
+  transform: rotate(17.597deg) scale(0.9);
 }
 // .imageBx:hover > .nftB {
 //   transform: rotate(17.597deg) translateX(66px);
@@ -73,9 +77,9 @@
 // }
 
 .banner {
-  position: absolute;
-  width: 100vw;
-
+  //position: absolute;
+  width: 100%;
+  margin-top: 7em;
   background: linear-gradient(
     135deg,
     rgba(190, 190, 190, 0.42) 0%,
@@ -89,7 +93,7 @@
   overflow: hidden;
   cursor: pointer;
   color: #fff;
-  bottom: 0;
+  //bottom: 0;
 }
 
 .banner:before {
@@ -170,7 +174,11 @@
   .imageBx {
     width: 95%;
   }
+  .hero {
+    padding: 2em 0 5em 0;
+  }
   .heroTxt {
+    margin-top: 1em;
     h1 {
       font-size: 2.4em;
       width: 100%;
@@ -179,6 +187,11 @@
       margin-top: 1em;
       width: 60vw;
       max-width: 500px;
+    }
+  }
+  .bannerContent {
+    li {
+      width: 50vw;
     }
   }
 }

@@ -12,14 +12,15 @@ const Buy = () => {
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.top}>
-            <h2>Collect NFTs</h2>
-            <p>Explore and buy NFTs from this collection.</p>
+            <h2>Sell NFTs</h2>
+            <p>Select which of your NFTs to sell.</p>
           </div>
+
           <CardGrid
             isLoading={isLoading}
             data={data}
             emptyText={"No NFTs found"}
-            action="buy"
+            action="sell"
           />
         </div>
       </div>

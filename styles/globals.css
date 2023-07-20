@@ -74,7 +74,9 @@ button {
 }
 
 button:disabled {
-  opacity: 0.7;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  backdrop-filter: blur(70px) !important;
   pointer-events: none;
   transition: 0.2s ease-in;
 }
@@ -90,9 +92,9 @@ textarea {
   font-size: 16px;
 }
 input {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
   font-size: 16px;
 }
 .circle {
@@ -110,4 +112,25 @@ input {
   border-radius: 100%;
 
   pointer-events: none;
+}
+.smContainer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    display: none;
+  }
+  .smContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .smContainer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    /* color: #84309c; */
+  }
 }
