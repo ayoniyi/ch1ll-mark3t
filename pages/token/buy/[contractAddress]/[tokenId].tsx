@@ -8,7 +8,7 @@ import {
   useValidEnglishAuctions,
 } from "@thirdweb-dev/react";
 import { NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
-import { useState } from "react";
+//import { useState } from "react";
 import {
   MARKETPLACE_ADDRESS,
   NFT_COLLECTION_ADDRESS,
@@ -20,7 +20,7 @@ import style from "../../Trade.module.scss";
 
 import Back from "../../back.svg";
 import Image from "next/image";
-import Item from "../../item.svg";
+//import Item from "../../item.svg";
 // import Box from "../../box.svg";
 // import Circle from "../../circle.svg";
 import user from "../../../../components/Navbar/user3.svg";
@@ -46,7 +46,6 @@ const TokenBuy = ({ nft, contractMetadata }: Props) => {
   async function buyListing() {
     let txResult;
 
-    //Add for auction section
     if (directListing?.[0]) {
       txResult = await marketplace?.directListings.buyFromListing(
         directListing[0].id,
@@ -58,6 +57,8 @@ const TokenBuy = ({ nft, contractMetadata }: Props) => {
 
     return txResult;
   }
+  // console.log("nft>>", nft);
+  // console.log("listing>>", directListing);
 
   return (
     <>
@@ -113,11 +114,12 @@ const TokenBuy = ({ nft, contractMetadata }: Props) => {
                 <div className={style.descTxt}>
                   <h3>Description</h3>
                   <p>
-                    This is a one in a kind bot, yours truly Afen bot special
+                    {/* This is a one in a kind bot, yours truly Afen bot special
                     NFT. Blockchain has the potential to adequately transform
                     African society. Offering insurmountable opportunities to
                     those leveraging it to build a new structure in diverse
-                    sectors.{" "}
+                    sectors.{" "} */}
+                    None
                   </p>
                 </div>
                 <div className={style.price}>

@@ -8,7 +8,7 @@ import {
   ThirdwebNftMedia,
   useContract,
   useValidDirectListings,
-  useValidEnglishAuctions,
+  //useValidEnglishAuctions,
 } from "@thirdweb-dev/react";
 //import Img from "./img.png";
 import style from "./Card.module.scss";
@@ -17,7 +17,7 @@ import style from "./Card.module.scss";
 
 type Props = {
   action?: string;
-  nft?: NFT;
+  nft?: any;
 };
 
 const Card = ({ action, nft }: Props) => {
@@ -31,7 +31,7 @@ const Card = ({ action, nft }: Props) => {
       //tokenContract: NFT_COLLECTION_ADDRESS,
       tokenId: nft?.metadata.id,
     });
-
+  //console.log(nft);
   return (
     <>
       <div className={style.container}>
