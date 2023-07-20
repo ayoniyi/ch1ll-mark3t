@@ -4,10 +4,10 @@ Ch1ll marketplace based on the ch1ll collection on the polygon (mumbai) blockcha
 
 Marketplace and erc721 contracts built with thirdweb.
 
-## Feartures
+## Features
 
 View, Buy NFTs currently listed on the market, Sell NFTs bought from the collection, View NFTs in your wallet from the collection in your wallet.
 
 ## Core Tools
 
-TypeScript, Nextjs, SASS
+TypeScript, Nextjs, SASS, thirdweb
