@@ -25,7 +25,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         </p>
       </div>
       <div className="mainContainer">
-        <ThirdwebProvider activeChain={activeChain}>
+        <ThirdwebProvider
+          clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+          activeChain={activeChain}
+        >
           <Navbar />
           <Component {...pageProps} />
         </ThirdwebProvider>{" "}
