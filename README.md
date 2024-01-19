@@ -10,4 +10,4 @@ View, Buy NFTs currently listed on the market, Sell NFTs bought from the collect
 
 ## Core Tools
 
-TypeScript, Nextjs, SASS, thirdweb
+TypeScript, Nextjs, SCSS, thirdweb
